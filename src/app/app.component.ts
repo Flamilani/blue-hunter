@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Blue Hunter';
-  subtitle = 'Aplicação SPA Angular';
+  subtitle = 'Aplicação SPA com Angular';
   clientes = 'Busca de Clientes';
   livros = 'Busca de Livros';
 }

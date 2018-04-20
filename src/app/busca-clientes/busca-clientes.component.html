@@ -1,5 +1,15 @@
 <article>
-<h2>{{ clientes }}</h2>
-<input type="text">
-<button class="button-primary">Busca</button>
+<h2>{{ titulo_cliente }}</h2>
+<input type="text" placeholder="Nome do Cliente" [(ngModel)]=name_part>
+<button class="button-primary" (click)="buscaClientes()">Buscar</button>
+<div class="lista_clientes" *ngFor="let cliente of user">
+	<div class="titulo">Nome: {{ cliente.fullName }}</div>
+
+		<span>Sexo: {{cliente.gender}}</span>
+   		<span>Email: {{cliente.email}}</span>
+   		<span>Fone: {{cliente.phone}}</span>
+   		<span>Usuário: {{cliente.username}}</span>
+    	
+</div>
+<div style="display: none;" class="alerta">Nenhum cliente encontrado! Tente mais tarde.</div>
 </article>
