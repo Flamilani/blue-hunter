@@ -1,15 +1,21 @@
 # Projeto Aplicação SPA com Angular
 
 - Instruções:
-Para fazer build, uso de npm e node.js para baixar dependências
-Fazer deploy no heroku e github para subir no repositório 
-Realizar a execução de aplicação através de ambiente de Heroku
+Para fazer build, uso de npm e node.js para baixar dependências.
+
+Fazer deploy no heroku e github para subir no repositório.
+
+Realizar a execução de aplicação através de ambiente de Heroku.
 
 - Memorando:
 Utilizo framework Angular 4 com CLI usando aplicação SPA porque é rápido e útil para facilitar o uso de aplicação, com Less e Typescript para compliar o sistema de aplicação.
+
 Usei comandos através de Cmder. 
+
 Criei componentes de listar clientes e livros através de Angular CLI para realizar a busca.
+
 Subi repositório remoto de github.
+
 Fiz execução de aplicação no Heroku.
 
 
