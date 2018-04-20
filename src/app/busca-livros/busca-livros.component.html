@@ -2,6 +2,8 @@
 <h2>{{ livros }}</h2>
 <input type="text" placeholder="Título do Livro" [(ngModel)]=title_part>
 <button class="button-primary" (click)="buscaLivros()">Buscar</button>
+
+<div *ngIf="book?.length > 0;else no_data">
 <div class="lista_livros" *ngFor="let livro of book">
 	<div class="titulo">Título: {{ livro.title }}</div>
 	<span>Autor: {{ livro.author }}</span>
@@ -9,5 +11,10 @@
 	<span>Ano de Publicação: {{ livro.yearPublished }}</span>
 	<span>Rating: {{ livro.rating }}</span>
 </div>
-<div style="display: none;" class="alerta">Nenhum livro encontrado! Tente mais tarde.</div>
+</div>
+<ng-template #no_data>
+	<div class="alerta">
+	Nenhum livro encontrado!
+	</div>
+</ng-template>
 </article>
